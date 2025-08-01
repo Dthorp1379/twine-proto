@@ -104,24 +104,56 @@ var LZString=function(){var r=String.fromCharCode,o="ABCDEFGHIJKLMNOPQRSTUVWXYZa
 		<div id="init-lacking"><p>Browser lacks capabilities required to play.</p><p>Upgrade or switch to another browser.</p></div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<tw-storydata name="RESONANT" startnode="14" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="C8825E4F-D9A4-417B-A0EB-C2C11C6DFD61" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">.link-internal {
-  display: inline-block;
-  background-color: #222;
-  color: #fff;
-  padding: 10px 20px;
-  margin: 10px auto;
-  text-align: center;
-  border-radius: 5px;
-  border: 2px solid #444;
-  font-size: 1.2em;
-  text-decoration: none;
-  transition: background-color 0.3s, transform 0.2s;
+	<tw-storydata name="RESONANT" startnode="14" creator="Twine" creator-version="2.10.0" format="SugarCube" format-version="2.37.3" ifid="C8825E4F-D9A4-417B-A0EB-C2C11C6DFD61" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">/* === Base Styles === */
+body {
+  background-color: #0a0a0a;
+  color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.link-internal:hover {
-  background-color: #555;
-  transform: scale(1.05);
+#passages {
+  padding: 40px;
+}
+
+/* === Link Buttons === */
+a.link-internal {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 2px solid #ff3c3c;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 15px 30px;
+  margin: 10px 5px;
+  font-weight: bold;
+  text-align: center;
+  width: 260px; /* fixed width for uniformity */
+  transition: all 0.25s ease;
+  border-radius: 6px;
+}
+
+a.link-internal:hover {
+  background-color: rgba(255, 0, 0, 0.2);
+  border-color: #ff3c3c;
+  color: #ff3c3c;
   cursor: pointer;
+}
+
+/* === Passage Styling === */
+.passage {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* === Header/Footer (optional, if used) === */
+#header, #footer {
+  color: #888;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript">// Add your audio track to the playlist
 SimpleAudio.tracks.add("bgm","https://dthorp1379.github.io/twine_assets/bgm.mp3");
 
@@ -366,13 +398,19 @@ As his friend — the only one who understood him — crumbled under the weight 
 
 Until finally, Riku’s body imploded — a soundless collapse — and everything went still.
 
-[[Continue-&gt;CorruptionDespair]]</tw-passagedata><tw-passagedata pid="10" name="CorruptionDespair" tags="" position="850,1125" size="100,100">I dropped to my knees. The world had gone silent. It was charred, empty.
+[[Continue-&gt;CorruptionDespair]]</tw-passagedata><tw-passagedata pid="10" name="CorruptionDespair" tags="" position="1000,1225" size="100,100">I dropped to my knees. The world had gone silent. It was charred, empty.
 There were no teachers. No students. No words. Only ash and grief.
 
 My chest was burdened with the weight of the guilt of having failed the only person who truly saw me. Knowing no one would answer, I still whispered his name.
 
 &quot;Riku...what happened?&quot;
-</tw-passagedata><tw-passagedata pid="11" name="HopePath" tags="" position="350,950" size="100,100">I stared at Riku. He was the one person who mirrored my struggles.
+
+
+
+
+&lt;h2&gt;END&lt;/h2&gt;
+
+[[Return to Menu-&gt;Menu]]</tw-passagedata><tw-passagedata pid="11" name="HopePath" tags="" position="350,950" size="100,100">I stared at Riku. He was the one person who mirrored my struggles.
 The only thing I could think to do was reach out to him, so I did. The faint pulsing energy that was manifesting swelled into my hands and began to beat like a drum as I drew closer to my friend.
 
 &quot;Riku... you know as well as I do that we&#39;ve always been able to understand each other. It may not be the same...we&#39;re not the same...but I know what it feels like.&quot; 
@@ -401,9 +439,14 @@ He was beginning to look like himself again. It was working.
 
 I wasn’t enough. I don&#39;t think I ever will be, but that&#39;s natural. I can&#39;t be his change, and I&#39;m sure he knows that. Even if I can be his anchor, I&#39;m not his solution.
 
-
 &lt;&lt;set $rikuSaved = true&gt;&gt;  
-&lt;&lt;goto &quot;JivoraAftermath&quot;&gt;&gt;</tw-passagedata><tw-passagedata pid="12" name="DefiancePath" tags="" position="475,950" size="100,100">Not only can I feel it, but I can *see* his energy flaring. Tendrils of darkness wrap themselves around Riku’s spirit like chains...chains forged from despair and isolation. His screams pierce my ears and the walls begin to crumble synchronously.
+
+
+&lt;h2&gt;END&lt;/h2&gt;
+
+[[Return to Menu-&gt;Menu]]
+
+</tw-passagedata><tw-passagedata pid="12" name="DefiancePath" tags="" position="475,950" size="100,100">Not only can I feel it, but I can *see* his energy flaring. Tendrils of darkness wrap themselves around Riku’s spirit like chains...chains forged from despair and isolation. His screams pierce my ears and the walls begin to crumble synchronously.
 
 I didn&#39;t fall back. This was my friend standing here, not an actual monster. He needed someone to help—anyone, and I wasn&#39;t going to let him suffer alone.
 
@@ -427,13 +470,47 @@ The ravaging darkness is unraveling from his body, and Riku lies there unrespons
 
 I saved him from himself, but at what cost? Before I could shed a tear, and it was almost immediate, my ears picked up on a sharp inhale. Riku&#39;s...alive. He&#39;s unconscious but he&#39;s alive. I stopped the corruption from taking over, though, I&#39;m unsure of it&#39;s disappearance. The threads were cut, but the scars may remain.
 
-Injured and confused, the headmaster as well as the students are silent. The tense air is finally beginning to settle.
+Injured and confused, the headmaster as well as the students are silent. The tense air is finally beginning to settle and a new path is ready to be explored.
 
-</tw-passagedata><tw-passagedata pid="13" name="SuppressionPath2" tags="" position="600,950" size="100,100"></tw-passagedata><tw-passagedata pid="14" name="Menu" tags="" position="700,175" size="100,100">&lt;center&gt;
+
+
+
+&lt;h2&gt;END&lt;/h2&gt;
+
+[[Return to Menu-&gt;Menu]]</tw-passagedata><tw-passagedata pid="13" name="SuppressionPath2" tags="" position="600,950" size="100,100">Riku was going berserk. Whips of energy cracked and lashed out in every direction. Parts of me began to recall certain lessons we learned from the clan. To be calm, to be clear, to restrain oneself—these were the principles to full control over the mind and body, at least from what my clan believes. I struggled to come up with a concrete plan in the moment. I couldn&#39;t bring myself to attack Riku without trying to reason with him first.
+
+Begrudgingly, I decided to look at this from a logical standpoint. It seems like the only thing that could work in this situation.
+
+&quot;Riku!&quot;, I shouted. &quot;Please...look at what you&#39;re doing! You&#39;re going to end up hurting everyone if you don&#39;t stop this!&quot;
+
+Riku&#39;s monstrous eyes locked on to mine. With a deep inhale and a long exhale, his voice rumbled in an unexpectedly calm tone. &quot;You mean like how they hurt me—hurt us? I&#39;m expected to give grace to those who couldn&#39;t look outside of themselves? I&#39;ve already toned myself down for years, so why should I neglect myself for the sake of others when they refused to do the same for me?&quot;
+
+His voice was growing louder. &quot;Morals? Doing the right thing? Being the right thing?&quot; His anger was revealing itself ever so gradually. &quot;Tell me, Akairo!&quot;
+
+I can&#39;t deny his feelings. Not only were they valid because they were his, but they were also mine. I felt the same way. He said it himself....they hurt us, so it&#39;s almost impossible to counter his points. I didn&#39;t let that stop me, however. What I learned...what I promised myself was to defy adversity! I just need him to calm down. After that, I can talk to him properly.
+
+&quot;Listen to me, Riku. What you&#39;re saying is true. Your feelings shouldn&#39;t be dismissed for the greater good or anything like that. However, what matters is the kind of person you&#39;d like to become. The person you&#39;ve always wanted to proudly show is still there.&quot;
+
+His eyes relaxed.
+
+&quot;It doesn&#39;t work for every scenario, but what we learned wasn&#39;t for naught. You have to try to calm down or else...or else you&#39;ll lose yourself more than you already have!&quot;
+
+His peaking aura began to subside. He was looking like himself again, but the energy remained. I could see it, ready to reignite at any moment, but Riku was with us again.
+
+He spoke not a word. Riku was with us again...until he wasn&#39;t. Before I could say anything else, Riku took off, seemingly to figure things out on his own. Left behind was a dismantled dojo and a frustrated &quot;friend&quot;. All I could do was reinforce the ideas of our clan, and although it worked, it didn&#39;t help wih anything in the long run. 
+
+Riku was still out there somewhere...hurting and alone.
+
+
+
+
+&lt;h2&gt;END&lt;/h2&gt;
+
+[[Return to Menu-&gt;Menu]]</tw-passagedata><tw-passagedata pid="14" name="Menu" tags="" position="600,150" size="200,100">&lt;center&gt;
 
 &lt;&lt;audio &quot;bgm&quot; play loop&gt;&gt;
 
-===[ RESONANT ]===
+&lt;h1&gt;RESONANT&lt;/h1&gt;
 
 [[Start Game-&gt;Scarlet Sunrise]]
 
